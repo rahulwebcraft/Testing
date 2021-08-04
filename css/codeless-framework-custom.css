@@ -1,0 +1,13 @@
+.cl-header--layout-creative-fullscreen .cl-header__col--right .cl-header__element .cl_controls{
+    left:50% !important;
+    transform:translateX(-50%) !important;
+}
+
+.cl-header--layout-creative-fullscreen .cl-header__col{
+    min-width:90px !important;
+}
+
+.cl-header-menu-logo-center .cl-header__element.cl-header__element--logo{
+    display:block !important;
+    opacity:0.5;
+}

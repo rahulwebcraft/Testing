@@ -1,0 +1,348 @@
+.wpcf_dark {
+    .wpcf7{
+        padding: 45px !important;
+        min-width: 110%;
+        background: #000;
+        @include rmax(767){
+            min-width: 90%;
+        }
+
+        .cl-input-flex{
+            display:flex;
+            label{
+                flex:1;
+                padding-left:5px;
+                padding-right:5px;
+
+                &:first-child{
+                    padding-left:0;
+                }
+                &:last-child{
+                    padding-right:0
+                }
+
+                input{
+                    width:100%;
+                }
+            }
+        }
+
+        .cl-input-single{
+            display:block;
+            margin-top:10px;
+        }
+
+        textarea{
+            width:100%;
+            height: 115px;
+        }
+
+         &.input:not([type="submit"]), select, textarea{
+            background-color: #2e383b;
+            border-color: #2e383b;
+            //position: absolute;
+           @include lg{
+            margin-left: 25em;
+            margin-top: -30%;
+           } 
+            
+        }
+        &-text {
+            background-color: #2e383b !important;
+            border-color: #2e383b !important;
+            
+        }
+
+
+        &-form {
+            .cl-btn--style-square {
+                margin-top: 20%;
+                margin-left: 70%;
+                @include rmax(767){
+                    margin-left: 0 !important;
+                }
+            }
+                
+            
+            p {
+                width: 50%;
+                margin-top: -23px !important;
+                @include rmax(767){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.wpcf_light{
+    .wpcf7{
+        //padding: 45px !important;
+        //min-width: 110%;
+        //background: #f3f3f3;
+        @include rmax(767){
+            min-width: 90%;
+        }
+
+        .cl-input-flex{
+            display:flex;
+            label{
+                flex:1;
+                padding-left:5px;
+                padding-right:5px;
+
+                &:first-child{
+                    padding-left:0;
+                }
+                &:last-child{
+                    padding-right:0
+                }
+
+                input{
+                    width:100%;
+                }
+            }
+        }
+
+        .cl-input-single{
+            display:block;
+            margin-top:10px;
+        }
+
+        textarea{
+            width:100%;
+            height: 115px;
+        }
+
+         &.input:not([type="submit"]), select, textarea{
+            background-color: #fff;
+            border-color: #fff;           
+            @include lg{
+            margin-left: 25em;
+            margin-top: -30%;
+           } 
+            
+        }
+        &-text {
+            background-color: #fff !important;
+            border-color: #eaeaea !important;
+            
+        }
+
+
+        &-form {
+            .cl-btn--style-square {
+                margin-top: 20%;
+                margin-left: 70%;
+                @include rmax(767){
+                    margin-left: 0 !important;
+                }
+            }
+                
+            
+            p {
+                width: 50%;
+                margin-top: -23px !important;
+                @include rmax(767){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.wpcf_simple{
+    .wpcf7{
+        
+        @include rmax(767){
+            min-width: 90%;
+        }
+        &-form-control-wrap{
+            input:not([type="submit"]), select, textarea {
+                background-color: #fff;
+                //border-bottom: 1px solid #d8d8d8 !important;
+                border: none;
+                width: 100%;
+                box-shadow: 9px 9px 2px -9px #d8d8d8;
+            }
+
+            p{
+                width: 50% !important;
+                float: left;
+            }
+        }
+
+        .cl-input-flex{
+            display:flex;
+            label{
+                flex:1;
+                padding-left:5px;
+                padding-right:5px;
+
+                &:first-child{
+                    padding-left:0;
+                }
+                &:last-child{
+                    padding-right:0
+                }
+
+                input{
+                    width:100%;
+                }
+            }
+        }
+
+      
+
+        textarea{
+            width:100%;
+            height: 115px;
+            background-color: #fff !important;
+        }
+
+       
+        &-text {
+            background-color: #fff !important;
+            border-bottom: 1px solid #d8d8d8 !important;
+            border: none;
+            &:nth-child(1) {
+                width: 50% !important;
+                margin-right: 15px;
+            }
+        }
+
+
+        &-form {
+            .cl-btn--style-square {                
+                margin-left: 40%;
+                @include rmax(767){
+                    margin-left: 0 !important;
+                }
+            }
+                
+            
+            p {
+                width: 100%;
+                margin-top: -23px !important;
+                @include rmax(767){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.cl-skin-light{
+    .wpcf_simple{
+        .cl-btn{
+            &--color-normal {
+                color: #000;
+                background-color: #ffffff;
+                text-decoration: underline;
+                border: none;
+                margin: 20px 0px !important;
+                font-weight: 600;
+            }
+        }  
+    }
+}
+
+.cl-skin-dark{
+    .wpcf_simple{
+        .cl-btn{
+            &--color-normal {
+                color: #000;
+                background-color: #ffffff;
+                text-decoration: underline;
+                border: none;
+                margin: 20px 0px !important;
+                font-weight: 600;
+            }
+        }  
+    }
+}
+
+/*Simple Centered style*/
+.wpcf_simple_centered{
+	text-align: center !important;
+    .wpcf7{
+        text-align: center;
+
+        @include rmax(767){
+            min-width: 90%;
+        }
+        
+        .cl-input-flex{
+            display:flex;
+            label{
+                flex:1;
+                padding-left:5px;
+                padding-right:5px;
+
+                &:first-child{
+                    padding-left:0;
+                }
+                &:last-child{
+                    padding-right:0
+                }
+
+                input{
+                    width:100%;
+                }
+            }
+        }
+
+        &-textarea{
+            width: 100%;
+            text-align: center;
+            background-color: #fff !important;
+            border:none;
+            border-bottom: 1px solid #d8d8d8 !important;
+        }
+            
+        
+        &-text {
+            background-color: #fff !important;
+            border-bottom: 1px solid #d8d8d8 !important;
+            border: none;
+            width: 100% !important;
+            text-align: center;
+        }
+
+
+        &-form {
+            .cl-btn--style-square {           
+                margin-left: 45% !important;
+                @include rmax(767){
+                    margin-left: 0 !important;
+                }
+            }
+            
+        }
+    }
+}
+
+.cl-skin-light{
+    .wpcf_simple_centered{
+        .cl-btn{
+            &--color-normal {
+                color: #000;
+                background-color: #ffffff;
+                border-color: #000;
+                margin: 20px 0px !important;
+                font-weight: 600;
+            }
+        }  
+    }
+}
+
+.cl-skin-dark{
+    .wpcf_simple_centered{
+        .cl-btn{
+            &--color-normal {
+                color: #fff;
+                background-color: #f97352;
+                border-color: #f97352;
+            }
+        }
+    }
+}
