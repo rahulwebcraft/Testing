@@ -2093,4 +2093,8 @@ function slider_templates_included(){
 
 add_filter( 'kirki_telemetry', '__return_false' );
 
+function test (){
+    echo "test";
+}
+
 ?>
